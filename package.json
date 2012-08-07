@@ -1,0 +1,23 @@
+{
+    "name": "feedfix",
+    "version": "0.0.1",
+    "description": "",
+    "homepage": "",
+    "author": "Dotan Nahum <jondotan@gmail.com>",
+    "dependencies":
+    {
+        "express":"2.5.11",
+        "underscore":">= 0.0.1",
+        "libxmljs": ">= 0.6.0",
+        "moment":">= 1.7.0",
+        "request": ">= 2.10.0"
+    },
+    "devDependencies": {
+    "coffee-script": ">= 1.2.0",
+    "mocha": "",
+    "should":""
+    },
+    "engines": { "node": ">=0.4.0" }
+}
+
+
