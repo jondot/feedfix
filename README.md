@@ -31,3 +31,14 @@ This service should just snap into Heroku easily.
     $ cd feedfix; heroku create;
     $ git push heroku master
 
+
+## Contributing
+
+Fork, implement, add tests, pull request, get my everlasting thanks and a respectable place here :).
+
+
+## Copyright
+
+Copyright (c) 2012- [Dotan Nahum](http://gplus.to/dotan) [@jondot](http://twitter.com/jondot). See MIT-LICENSE for further details.
+
+
