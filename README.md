@@ -5,8 +5,7 @@ A smarter Node.js based reverse-proxy that fixes crappy RSS/Atom/XML feeds that 
 
 # Usage
 
-Currently there is one kind of transformation to make, which is on
-dates:
+First kind of transformation to make is on dates:
 
     http://datefixer.example.com?url=http://idiots.rss.com/stupidRSS.xml&datefields=pubDate&datefmt=ddd+MMM+DD+HH:mm:ss+z+YYYY
 
@@ -15,6 +14,17 @@ where originally they had the form of `ddd MMM DD HH:mm:ss z YYYY`.
 
 For how to compose formats, see [moment](http://momentjs.com).
 
+Another kind of transformation is on the id field:
+
+    http://datefixer.example.com?url=http://idiots.rss.com/stupidRSS.xml&cleanid=guid
+
+This will clear all the params in field `guid`.
+
+    <guid>http://idiots.com/12345?t=2014-01-13T08:52:31Z</guid>
+
+To
+
+    <guid>http://idiots.com/12345<guid>
 
 # Dependencies
 One implicit dependency is `libxml2` which `feedfix` uses implicitly, in
